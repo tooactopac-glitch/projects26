@@ -42,7 +42,4 @@ def index():
     # text = "this is FastAPI and gtts"
     # tts = gTTS(text=text,lang='en')
     # tts.save('output.mp3')
-    return FileResponse('audios/output.mp3',
-                        media_type="audio/mpeg",
-                        filename="output.mp3",
-                        headers={"Content-Disposition":"attachment; filename=output.mp3"})
+    return {"msg":"hello , world !!!"}
